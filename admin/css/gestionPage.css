@@ -1,0 +1,148 @@
+@font-face {
+    font-family: general;
+    src: url(/frontend/assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+*{
+    font-family: general;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+nav{
+    height: 5vh;
+    background: #5aa9e6;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav a{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.card-title{
+    color: gray;
+    font-weight: bolder;
+}
+
+.card-text{
+    color: lightgray;
+    font-size: small;
+}
+
+.containerImgCard{
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: 32vh;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImgCard img{
+    object-fit: cover;
+}
+
+.card{
+    margin-bottom: 2vh;
+    border-radius: 15px !important;
+}
+
+#companieName{
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin: 1vh 0;
+}
+
+
+.tableContainer{
+    min-height: fit-content;
+    max-height: 85vh;
+    overflow: scroll;
+}
+
+.btn-proceed, .btn-cancel{
+    font-size: small;
+    border-radius: 20px;
+    width: 6rem;
+    color: #f9f9f9;
+    border: none;
+}
+
+.btn-proceed{
+    background-color: #06d6a0 ;
+}
+
+.btn-cancel{
+    background-color: #ef476f;
+}
+
+.infoCompanieContainer div{
+    display: flex;
+    gap: 1rem; 
+    margin-bottom: 2vh;
+
+}
+
+.infoCompanieContainer label{
+    width: 6vw;
+    color:gray
+}
+
+.infoCompanieContainer input {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.infoCompanieContainer textarea {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+/*DETALLE PRODUCTO*/
+
+.infoProductContainer div{
+    display: flex;
+    gap: 1rem; 
+    margin-bottom: 2vh;
+
+}
+
+.infoProductContainer label{
+    width: 6vw;
+    color:gray
+}
+
+.infoProductContainer input {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.infoProductContainer textarea {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.modal-header{
+    background-color: #5aa9e6;
+    
+}
+
+.modal-header h5{
+    color: #f9f9f9;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBuy</title>
+    <link rel="stylesheet" href="./css/companies.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div>
+        <button class="btnHeaderActive"><a href="./companies.html">Empresas</a></button>
+        <button class="btnHeaderUnactive"><a href="./drivers.html">Motoristas</a></button>
+        <button class="btnHeaderUnactive"><a href="./orders.html">Ordenes</a></button>
+        </div>
+        <div>
+            <button><i  class="fa-solid fa-bell" style="color: #f9f9f9;"><a href="./notificaciones.html">Notificaciones</a></i></button>
+            <input type="text" placeholder="Buscar aqui....">
+            <img src="./assets/img/logoIcon.png" alt="">
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row">
+            <h5>Listado de empresas</h5>
+        </div>
+        <div id="companiesPanel" class="row">
+            <!--<div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                   <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a onclick="changeGestionCompanie()" href="./gestionPage.html" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-xl-2">
+
+                <div class="card" style="width: auto;">
+                    <div class="containerImgCard">
+                        <img src="./assets/img/restaurante.jpg" class="card-img-top" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="manageCompanie">Gestionar</a>
+                    </div>
+                </div>
+
+            </div>-->
+
+          
+        </div>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/75b6a1d3df.js" crossorigin="anonymous"></script>
+    <script src="./js/companies.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBuy</title>
+    <link rel="stylesheet" href="./css/orders.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <button class="btnHeaderUnactive"><a href="./companies.html">Empresas</a></button>
+            <button class="btnHeaderUnactive"><a href="./drivers.html">Motoristas</a></button>
+            <button class="btnHeaderActive"><a href="./orders.html">Ordenes</a></button>
+        </div>
+        <div>
+           
+            <button><i  class="fa-solid fa-bell" style="color: #f9f9f9;"><a href="./notificaciones.html">Notificaciones</a></i></button>
+            <input type="text" placeholder="Buscar aqui....">
+            <img src="./assets/img/logoIcon.png" alt="">
+        </div> 
+    </nav>
+
+    <main >
+      
+            
+
+                <h5>Lista de ordenes</h5>
+                <div id="advertenciaEliminacion"></div>
+                <div class="tableContainer">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">#Orden</th>
+                                <th scope="col">idUsuario</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersList">
+ 
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--MODAL SELECT MOTORISTA-->
+    <div class="modal fade " id="selectDelivery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Selecciona al motorista</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="tableContainer">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Opcionnes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="driversList" >
+                            
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div id="driversFooter" class="modal-footer">
+                <button onclick="asignarOrden()" type="button" class="btn-proceed">Asignar Orden</button>
+                <button type="button" class="btn-cancel " data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="detailOrderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalle de orden</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section id="infoClientModal">
+                        <div>
+                            <label for="orden">#orden:</label>
+                            <div>
+                                <p id="orden" class="itemInfoClient"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="nombreClient">Teléfono:</label>
+                            <div>
+                                <p id="nombreClient" class="itemInfoClient"></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="apellidoClient">Nombre:</label>
+                            <div>
+                                <p id="apellidoClient" class="itemInfoClient"></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="telefonoClient">Apellidos:</label>
+                            <div>
+                                <p  id="telefonoClient" class="itemInfoClient"></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="direccionClient">Dirección:</label>
+                            <div>
+                                <p id="direccionClient" class="itemInfoClient"></p>
+                            </div>
+                        </div>
+                    </section>
+                    <p style="color: gray; margin-top: 1rem;">Detalle:</p>
+                    <section class="containerTable">
+
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Empresa</th>
+                                    <th scope="col">Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cuerpoTabla">
+                               
+                            </tbody>
+                        </table>
+
+                    </section>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/75b6a1d3df.js" crossorigin="anonymous"></script>
+    <script src="./js/orders.js"></script>
+</body>
+
+</html>

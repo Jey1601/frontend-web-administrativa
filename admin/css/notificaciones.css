@@ -1,0 +1,156 @@
+@font-face {
+    font-family: general;
+    src: url(/frontend/assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+*{
+    font-family: general;
+}
+
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+nav{
+    background-color: #5aa9e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 10vh;
+    padding: 0 1vw;
+    margin-bottom: 2vh;
+}
+nav div:first-child{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div:last-child{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: -webkit-fill-available;
+}
+
+nav button{
+    background: none;
+    border: none;
+}
+
+nav i{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+nav img{
+    width: 3vw;
+}
+nav input{
+    width: 20vw;
+    border: none;
+    height: 3vh;
+    border-radius: 20px;
+    padding-left: 1rem;
+}
+
+nav input::placeholder{
+    color: lightgray;
+}
+
+.btnHeaderUnactive{
+    color: #f9f9f9;
+    font-size: medium;
+}
+
+.btnHeaderActive{
+    background: #ff6392;
+    width: 30%;
+    padding: 2px 5px 0;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.card-title{
+    color: gray;
+    font-weight: bolder;
+}
+
+.card-text{
+    color: lightgray;
+    font-size: small;
+}
+
+.containerImgCard{
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: 20vh;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImgCard img{
+    object-fit: cover;
+}
+
+.card{
+    margin-bottom: 2vh;
+    border-radius: 15px !important;
+}
+
+.tableContainer{
+    min-height: fit-content;
+    max-height: 85vh;
+    overflow: scroll;
+}
+
+.btn-proceed, .btn-cancel{
+    font-size: small;
+    border-radius: 20px;
+    width: 6rem;
+    color: #f9f9f9;
+    border: none;
+}
+
+.btn-proceed{
+    background-color: #06d6a0 ;
+}
+
+.btn-cancel{
+    background-color: #ef476f;
+}
+
+.infoDeleveryContainer div{
+    display: flex;
+    gap: 1rem; 
+    margin-bottom: 2vh;
+
+}
+
+.infoDeleveryContainer label{
+    width: 6vw;
+    color:gray
+}
+
+.infoDeleveryContainer input {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.infoDeleveryContainer textarea {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}

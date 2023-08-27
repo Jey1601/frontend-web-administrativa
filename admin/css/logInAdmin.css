@@ -1,0 +1,64 @@
+@font-face {
+    font-family: general;
+    src: url(/frontend/assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+*{
+    font-family: general;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #5aa9e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 22vw;
+    gap: 1rem;
+}
+
+input{
+    width: -webkit-fill-available;
+    height: 3vh;
+    border-radius: 11px;
+    border: none;
+}
+
+input::placeholder{
+    font-size: small;
+    color: lightgray;
+}
+
+img{
+    width: 45vw;
+    border-radius: 10%;
+}
+
+button{
+    width: -webkit-fill-available;
+    color: #f9f9f9;
+    background: #ffe45e;
+    border: none;
+    height: 3vh;
+    font-size: larger;
+    border-radius: 11px;
+    margin-top: 2vh;
+}
+
+label{
+    font-size: larger;
+    color: #f9f9f9;
+}
+
+h5{
+    font-size: 4vw;
+    color: #f9f9f9;
+    margin: 5vh 0;
+}

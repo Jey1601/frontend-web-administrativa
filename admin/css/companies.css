@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: general;
+    src: url(/frontend/assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+*{
+    font-family: general;
+}
+
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+nav{
+    background-color: #5aa9e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 10vh;
+    padding: 0 1vw;
+    margin-bottom: 2vh;
+}
+nav div:first-child{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div:last-child{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: -webkit-fill-available;
+}
+
+nav button{
+    background: none;
+    border: none;
+}
+
+nav i{
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+nav img{
+    width: 3vw;
+}
+nav input{
+    width: 20vw;
+    border: none;
+    height: 3vh;
+    border-radius: 20px;
+    padding-left: 1rem;
+}
+
+nav input::placeholder{
+    color: lightgray;
+}
+
+.btnHeaderUnactive{
+    color: #f9f9f9;
+    font-size: medium;
+}
+
+.btnHeaderActive{
+    background: #ff6392;
+    width: 30%;
+    padding: 2px 5px 0;
+    border-radius: 15px 15px 0 0;
+}
+
+main{
+    padding: 0 4vh !important;
+}
+
+.manageCompanie{
+    background: #ff6392;
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 16px;
+
+}
+
+.card-title{
+    color: gray;
+    font-weight: bolder;
+}
+
+.card-text{
+    color: lightgray;
+    font-size: small;
+}
+
+.containerImgCard{
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: 20vh;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImgCard img{
+    object-fit: cover;
+}
+
+.card{
+    margin-bottom: 2vh;
+    border-radius: 15px !important;
+    height: 37vh;
+
+}
+.card:hover{
+    
+    border: 3px solid #ff6392 ;
+}
